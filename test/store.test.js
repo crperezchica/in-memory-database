@@ -14,8 +14,8 @@ describe('store memory database', () => {
         const store = new Stores();
         const ralphs = store.save({ name: 'Ralphs', type: 'grocery' });
         const macys = store.save({ name: 'Macys', type: 'clothing' });
-        const id = store.getId();
-        assert.deepEqual(id, [ralphs, macys]);
+        const id = store.getId(ralphs._id);
+        assert.deepEqual(id, ralphs);
     });
 
     it('get all objects', () => {
