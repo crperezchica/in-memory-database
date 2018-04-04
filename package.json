@@ -1,0 +1,30 @@
+{
+  "name": "in-memory-database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "lint": "eslint.",
+    "pretest": "npm run lint",
+    "test": "npm run-mocha",
+    "mocha":"mocha"
+    "start":"npm run mocha -- -w"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crperezchica/in-memory-database.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/crperezchica/in-memory-database/issues"
+  },
+  "homepage": "https://github.com/crperezchica/in-memory-database#readme",
+  "devDependencies": {
+    "mocha": "^5.0.5"
+  }
+}
