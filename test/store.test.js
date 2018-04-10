@@ -29,7 +29,8 @@ describe('store memory database', () => {
     it('removes object by id', () => {
         const store = new Stores();
         const ralphs = store.save({ name: 'Ralphs', type: 'grocery', _id: '()' });
-        const macys = store.save({ name: 'Macys', type: 'clothing', _id:'()' });
-
+        //const macys = store.save({ name: 'Macys', type: 'clothing', _id:'()' });
+        const toDelete = store.remove(ralphs._id);
+        assert.deepEqual(toDelete, { toDelete:true });
     });
 }); 
